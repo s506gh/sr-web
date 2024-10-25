@@ -1,8 +1,642 @@
 <html>
+    <title>Shelby Robotics</title>
     <head>
-
+        <meta charset="UTF8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="icon"
+          href="assets/img/logomain.svg"
+          type="image/png"
+          sizes="16x16" />
+        <link
+          href="css/bootstrap.min.css"
+          rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato"
+          rel="stylesheet"
+          type="text/css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="css/swiper-bundle.min.css" rel="stylesheet"
+          type="text/css" />
     </head>
     <body>
-        this is a test 2
-    </body>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+    
+        <nav id="navspan" class="navbar fixed-top navbar-expand-lg navbar-dark">
+          <a href="index.html#home" class="navbar-brand lg-0"><img
+            class="d-inline-block align-top"
+            src="assets/img/CrevoSmaller.svg"
+            width="65"
+            height="auto"
+            style="padding-left: 15px" />
+    </a>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center w-100">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link active"> HOME </a>
+              </li>
+              <li class="nav-item active">
+                <a href="robots.html" class="nav-link active"> ROBOTS </a>
+              </li>
+              <li class="nav-item active">
+                <a href="blogs.html" class="nav-link active"> BLOGS </a>
+              </li>
+              <li class="nav-item active">
+                <a href="sponsors.html" class="nav-link active"> SPONSORS </a>
+              </li>
+              <li class="nav-item active">
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://www.paypal.com/paypalme/CrevolutionRobotics"
+                  class="nav-link active">
+                  DONATE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <script>
+        const navLinks = document.querySelectorAll('.nav-item')
+      const menuToggle = document.getElementById('navbarNav')
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+      navLinks.forEach((l) => { l.addEventListener('click', function execute(){
+       if(window.innerWidth <= 992) {
+        bsCollapse.toggle()
+         }
+    
+    })
+      })
+      </script>
+        <!-- PIX CAROUSEL -->
+        <div id="carouselExample" class="carousel slide ">
+          
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <img src="assets/img/Carousel/ExcellenceInEngineeringTeamPic.JPG" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Carousel/2023tp.JPG" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Carousel/2022tp1.jpg" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Carousel/2019TP33.png" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Carousel/TeamPic1.jpg" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Carousel/TeamPic2.jpg" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Carousel/sponsors.png" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+            </div>
+          </div>
+          <img class="crevomark position-absolute bottom-0 translate-middle" src="assets/img/Crevomark.svg"> 
+          <button class=" pnbtn carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="pnbtn carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>  
+             
+        </div>
+    
+        <script>
+          var swiper = new Swiper(".swiper", {      
+          spaceBetween: 1,
+          lazy: true,
+          lazyPreloadPrevNext: 1,
+          speed: 1300,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          });
+                                </script>
+        <!-- ABOUT US -->
+        <div id="about" class="container-fluid text-center bg-2">
+          <h2 class="aboutus_title">ABOUT US</h3>
+          <p class="textcolor textitalic aboutus_desc">
+            Crevolution is a robotics team from Sterling Heights, Michigan, that is
+            composed of students from the Utica Community Schools District. Each
+            year, we build a robot to compete in a game designed by FIRST, and have 
+            a lot of fun doing so.
+          </p>
+          <br />
+          
+          <ul class="list-group autop">
+    
+            <li class="list-group-item aubot">
+              Crevolution is a high school robotics team, participating in the
+              <a href="http://www.usfirst.org" target="_blank">FIRST</a>
+              Robotics Competition
+            </li>
+            <li class="list-group-item aubot">
+              Our team is comprised of students from the Utica Community Schools
+              district.
+            </li>
+            <li class="list-group-item aubot">
+              In 2008, we were founded by our sister team,
+              <a href="http://www.thunderchickens.org"
+                target="_blank">Thunderchickens</a>
+              .
+            </li>
+            <li class="list-group-item aubot">
+              The name Crevolution is a portmanteau, with its root words being
+              creative and revolutionary. Our team's driving goal is to help
+              transform the world into one which respects science and technology.
+            </li>
+            <li class="list-group-item aubot">
+              Since our beginnings, we have also focused highly on helping those
+              around us. Community support and youth STEAM workshops are something
+              we prioritize and promote.
+            </li>
+            <li class="list-group-item aubot">
+              We are always looking for new members! If you are in the surrounding
+              area, and are looking to be a part of our team, please reach out at
+              <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a>
+              .
+            </li>
+          </ul>
+          <br>
+          <h2>ABOUT THE SUB-TEAMS</h2>
+          <br>
+          <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Build <span class="badge t rounded-pill">T</span></h5>
+                    <p class="card-text">
+                        <b>Build</b> focuses on creating prototypes, fabricating parts, and assembling the robot for competitions.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small>Lead: Niken P.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Design <span class="badge t rounded-pill">T</span></h5>
+                    <p class="card-text">
+                      <b>Design</b> focuses on designing the robot and its parts using CAD software.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small>Lead: Colin D.
+                    </small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Programming <span class="badge t rounded-pill">T</span></h5>
+                    <p class="card-text">
+                        <b>Programming</b> focuses on coding the robot and creating a scouting app.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small>Leads: Edward L. / Jay M.</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Electrical <span class="badge t rounded-pill">T</span></h5>
+                    <p class="card-text">
+                        <b>Electrical</b> focuses on the electrical subsystems in our robotics projects including the robot to ensure high standards.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small>Lead: Nick T.</small>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Marketing <span class="badge nt rounded-pill">NT</span></h5>
+                  <p class="card-text">
+                      <b>Marketing</b> focuses on brand identity through strategical graphic design, social media management, website development, and community perception.</p>
+              </div>
+              <div class="card-footer">
+                  <small>Leads: Logan L. / Logan S.</small>
+              </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Outreach <span class="badge nt rounded-pill">NT</span></h5>
+                <p class="card-text">
+                    <b>Outreach</b> focuses on the planning and successful execution on community events with a particular focus in STEAM opportunities.
+                </p>
+            </div>
+            <div class="card-footer">
+                <small>Leads: Cayla T. / Adeline P.</small>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <script>
+          var coll = document.getElementsByClassName("collapsibleSub");
+          var i;
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("activeSub");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+              if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";po
+              }
+            });
+          }
+        </script>
+    
+    
+        <!-- Current Events -->
+        <script>
+          var ResultTime;
+          var EventNumber;
+          function LaunchTime(EventNumber) {
+            EventNumber = EventNumber - 1;
+            var countDownDateArr = [
+              new Date("April 17, 2024 9:00:00").getTime(),
+              new Date("March 23, 2023 9:00:00").getTime(),
+            ];
+            var countDownDate = countDownDateArr[EventNumber];
+            var VarStringId = ["TimeTest", "TimeTest2", "TimeTest3", "TimeTest4"];
+            setInterval(function () {
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
+              if (distance > 0) {
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                  (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById(VarStringId[EventNumber]).innerHTML =
+                  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+              } else {
+                document.getElementById(VarStringId[EventNumber]).innerHTML =
+                  0 + "d " + 0 + "h " + 0 + "m " + 0 - +"s ";
+              }
+            }, 1000);
+          }
+        </script>
+    
+    <h2 class="text-center textcolor">CURRENT EVENTS</h2>
+    <br>
+    <div class="accordion pastevents" id="pastevents">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#past" aria-expanded="false" aria-controls="past">
+            PAST EVENTS
+          </button>
+        </h2>
+        <div id="past" class="accordion-collapse collapse" data-bs-parent="#pastevents">
+          <div class="eventlist-2 list-group">
+            <div class="list-group-item" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">Open House</h5>
+                <small class="date">Thu, September 19, 2024</small>
+              </div>
+              <p class="mb-1">Gene L. Klida Utica Academy for International Studies</p>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">Henry Ford II HS Parade</h5>
+                <small class="date">Fri, October 11, 2024</small>
+              </div>
+              <p class="mb-1">Henry Ford II High School</p>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">BWW Fundraiser (Oct)</h5>
+                <small class="date">Sun, October 20, 2024</small>
+              </div>
+              <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <br>
+    <div class="eventlist list-group">
+      <div class="list-group-item" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="bold mb-1">STEAM Night</h5>
+          <small class="date">Wed, October 23, 2024</small>
+        </div>
+        <p class="mb-1">Gene L. Klida Utica Academy for International Studies</p>
+      </div>
+      <div class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="bold mb-1">FLL Scrimmage</h5>
+          <small class="date">Sat, October 26, 2024</small>
+        </div>
+        <p class="mb-1">Shelby Jr. High</p>
+      </div>
+      <div class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="bold mb-1">BWW Fundraiser (Nov)</h5>
+          <small class="date">Sun, November 10, 2024</small>
+        </div>
+        <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="accordion moreevents" id="moreevents">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#more" aria-expanded="false" aria-controls="more">
+            MORE EVENTS
+          </button>
+        </h2>
+        <div id="more" class="accordion-collapse collapse" data-bs-parent="#moreevents">
+          <div class="eventlist-2 list-group">
+            <div class="list-group-item" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">BWW Fundraiser (Dec)</h5>
+                <small class="date">Sun, December 15, 2024</small>
+              </div>
+              <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">Season Kickoff</h5>
+                <small class="date">Saturday, January 4, 2025</small>
+              </div>
+              <p class="mb-1">Gene L. Klida Utica Academy for International Studies</p>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">BWW Fundraiser (Jan)</h5>
+                <small class="date">Sun, January 12, 2025</small>
+              </div>
+              <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">BWW Fundraiser (Feb)</h5>
+                <small class="date">Sun, February 2, 2025</small>
+              </div>
+              <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+            </div>
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="bold mb-1">BWW Fundraiser (Mar)</h5>
+                <small class="date">Sun, March 2, 2025</small>
+              </div>
+              <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <br>
+    <br>
+        <!-- SOCIAL MEDIA -->
+        <div id="contact_us">
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-6 mailform textcolor">
+              <h2>Contact Us:</h2>
+              <form target="_blank"
+                action="https://formsubmit.co/crevo.robotics@gmail.com"
+                method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col pb-2">
+                      <input type="text" name="name" class="form-control"
+                        placeholder="Name" required>
+                    </div>
+                    <div class="col pb-2">
+                      <input type="email" name="email" class="form-control"
+                        placeholder="Email Address" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group pb-2">
+                  <textarea placeholder="Your Message" class="form-control"
+                    name="message" rows="10" required></textarea>
+                </div>
+                <input type="hidden" name="_next"
+                  value="https://crevorobotics.org/index.html#contact_us">
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit
+                  Form</button>
+              </form>
+              <br>
+            </div>
+    
+            <!-- CONTACT US (Part of Social Media)-->
+            <div id="contact" class="bg-1 col-md-6 text-center">
+              <div class="d-none d-md-block">
+                <iframe style="width: 80%;"
+                  height="500px"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.3508162499984!2d-83.01199528841927!3d42.56907577105401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dbf5cb46e185%3A0x2a08df774b0870be!2sHeritage%20Junior%20High%20School!5e0!3m2!1sen!2sus!4v1702935699456!5m2!1sen!2sus"></iframe>
+    
+                <br class="d-none d-md-block">
+                <p class="textcolor" style="padding: 0 10% 0 10%;">
+                  Our build site is located at 37400 Dodge Park Rd, Sterling
+                  Heights,
+                  MI 48312
+                </p>
+              </div>
+              <p class="textcolor d-md-none" style="padding: 0 10% 0 10%;">
+                Our build site is located at 37400 Dodge Park Rd, Sterling
+                Heights,
+                MI 48312
+              </p>
+              <br>
+    
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="d-none d-lg-block">
+          <div class="bg-1 bottomnav">
+            <div class="container-fluid">
+              <br />
+              <div class="row">
+                <div class="col-lg-3 ">
+                  <a href="#home" class
+                    style="height: 40px"><img
+                      class="bottomLogo "
+                      src="assets/img/CrevoSmall.svg" /></a>
+                </div>
+                <div class="col-lg-6  text-center">
+                  <p class="textcolor slogon">
+                    "A CREATIVE REVOLUTION"              </p>
+                  <p class="textcolor">
+                    For any comments or questions that
+                    concern
+                    Crevolution,
+                  </p>
+                  <p class="textcolor">please
+                    contact us at
+                    <a
+                      href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
+    
+                </div>
+                <div class="col-lg-3 text-center">
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+                      class="bottomPR"
+                      src="assets/img/Social Media/Instagram.svg"></a>
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.youtube.com/@crevolutionrobotics2851">
+                    <img class="bottomPR"
+                      src="assets/img/Social Media/Youtube.svg">
+                  </a>
+                  <br>
+                  <br>
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/Crevolution2851/"><img
+                      class="bottomPR"
+                      src="assets/img/Social Media/Facebook.svg"></a>
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/Crevolution2851">
+                    <img class="bottomPR"
+                      src="assets/img/Social Media/Twitter.svg">
+                  </a>
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </footer>
+        <!-- Moblie footer -->
+        <footer class="d-lg-none">
+          <div id="contact_us" class="bg-1 bottomnav">
+            <div class="container-fluid text-center">
+              <br />
+              <a href="#home" class style="height: 40px"><img
+                  class="bottomLogom"
+                  src="assets/img/CrevoSmall.svg" /></a>
+    
+              <p class="textcolor slogon">
+                "A CREATIVE REVOLUTION"          </p>
+              <p class="textcolor">
+                For any comments or questions that concern
+                Crevolution,
+              </p>
+              <p class="textcolor">please
+                contact us at
+                <a
+                  href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
+              <div class="row">
+                <div class="col-3 text-center">
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+                      class="bottomPR"
+                      src="assets/img/Social Media/Instagram.svg"></a>
+                </div>
+                <div class="col-3 text-center">
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.youtube.com/@crevolutionrobotics2851">
+                    <img class="bottomPR"
+                      src="assets/img/Social Media/Youtube.svg"></a>
+                </div>
+                <div class="col-3 text-center">
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/Crevolution2851/"><img
+                      class="bottomPR"
+                      src="assets/img/Social Media/Facebook.svg"></a>
+                </div>
+                <div class="col-3 text-center">
+                  <a class="bottomA" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/Crevolution2851">
+                    <img class="bottomPR"
+                      src="assets/img/Social Media/Twitter.svg"></a>
+    
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </footer>
+    
+        <script>
+          $(document).ready(function () {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+    
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+    
+                // Store hash
+                var hash = this.hash;
+    
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $("html, body").animate(
+                  {
+                    scrollTop: $(hash).offset().top,
+                  },
+                  900,
+                  function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  }
+                );
+              } // End if
+            });
+          });
+        </script>
+      </body>
+    </html>
+    
 </html>

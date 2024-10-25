@@ -1,0 +1,282 @@
+body {
+    background-color: #0f0f0f;
+  
+    overflow-x: hidden !important;
+    /* ^ Used to hide the scrollbar*/
+  
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  body::-webkit-scrollbar {
+    /*Chrome, Safari, and Opera*/
+    display: none;
+  }
+  ::-webkit-scrollbar { 
+    width: 0 !important
+  }
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* ^ Used to hide the scrollbar*/
+  
+  
+  .aligntext {
+    text-align: left;
+    margin-left: 36px;
+  }
+  .textcolor {
+    color: white;
+  }
+  .textitalic {
+    font-style: italic;
+  }
+  .textspacer {
+    padding-bottom: 3px;
+    padding-top: 3px;
+  }
+  
+  .navbar-nav li:hover {
+    color: #000 !important;
+    background-color: #efb821 !important; /*#C28510 and 2B2D42 */
+  }
+  nav {
+    background-color: #1F1F1F;
+    opacity: 1;
+    font-family: Montserrat;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-bottom: 5px solid #efb821;
+  }
+  #navspan {
+    padding: 0px 0px 0px 0px;
+  }
+  .nav-link {
+    padding: 22px 0 22px 0;
+    
+  }
+  
+  .navbar-toggler {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-right: 11px;
+  }
+  
+  .bottomnav {
+    background-color: #1f1f1f;
+  }
+  .bottomLogo {
+    width: 167px;
+    margin: 0px 0px 0px 30%;
+  }
+  .bottomLogom {
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .bottomPR {
+    width: 70px;
+  }
+  .bottomA {
+    margin: 0px 10px 0px 10px;
+  }
+  .slogon {
+  font-weight: 900;
+    margin: 20px 0 20px 0;
+    font-size: 24px;
+  }
+  /*------------------------------------------------------------------*/
+  
+  .accordion {
+    --bs-accordion-bg: #000000;
+    --bs-accordion-color: #dadada;
+    --bs-accordion-btn-color: #dadada;
+    --bs-accordion-border-color:#dadada ;
+    --bs-accordion-active-color: #1f1f1f ;
+    --bs-accordion-active-bg: #efb821 ;
+  }
+  .accordion-collapse{
+    text-align: left;
+  }
+  
+  .aboutus_title {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  li {
+    color: white;
+  }
+  
+  #calendar {
+    max-width: 90%;
+    
+    
+    --fc-today-bg-color: rgba(255, 213, 0, 0.15);
+    --fc-event-bg-color: #efb821;
+    margin: 0 auto !important; 
+  }
+  .fc-view-container {
+      padding: 30px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);     
+    }
+  
+  
+  .fc-toolbar-title{
+    color: white;
+  }
+  .fc-col-header-cell-cushion{
+    text-decoration: none;
+    color: #fff;
+  }
+  .fc-daygrid-day-number{
+    text-decoration: none;
+    color: #fff;
+  }
+  .mailform{
+    padding: 0 10% 0 10%;
+    
+  }
+  .mailform button:hover{
+    background-color: #efb821 !important;
+  }
+  .mailform button{
+    background-color: #222227;
+    margin: 5px 0 20px 0;
+    border-color: #dadada;
+    border-width: 2px;
+  }
+  iframe{
+    border-radius: 5px;
+  }
+  .indexcar{
+    height: 48vw;
+  }
+  .swiper{
+    --swiper-navigation-color: #dadada;
+    
+  }
+  .swiper-button-prev{
+  padding: 3%;
+  }
+  .swiper-button-next{
+  padding: 3%;
+  }
+  
+  .aubot{
+    background-color: #0b0b0b;
+    color:#fff;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+  }
+  
+  body {
+    padding-top: 2rem;
+  }
+  
+  @media (min-width: 576px) {
+    .card-group.card-group-scroll {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+  }
+  
+  .card-group.card-group-scroll > .card {
+    flex-basis: 35%;
+  }
+  
+  .card-body {
+    background-color: #0b0b0b;
+    color: #fff;
+  }
+  
+  .card-footer {
+    background-color: #000;
+    color: #FCEFD0
+  }
+  .nt {
+    background-color: #656CB2;
+    color: #fff;
+  }
+  .t {
+    background-color: #efb821;
+    color: #000;
+  }
+  .card-group {
+    margin-left: 10%;
+    margin-right: 10%;
+    filter: drop-shadow(0px 0px 20px #efb82133);
+  }
+  .rebrand {
+    background-color: #090909;
+    border-radius: 25px;
+    margin-left: 100px; margin-right: 100px;
+  }
+  .carousel {
+    height:1000 px;
+    background-image: linear-gradient(180deg, black, #00000000);
+  }
+  .crevomark {
+    width: 35%;
+    margin-left: 50%; margin-right: 50%;
+    filter: drop-shadow(0px 0px 10px #000000);
+  }
+  .pnbtn {
+    filter: drop-shadow(0px 0px 10px #000000);
+  }
+  
+  a {
+    color:#7dbbe7
+  }
+  .list-group {
+    filter: drop-shadow(0px 0px 20px #efb82133);
+  }
+  
+  .eventlist {
+    margin-left: 20%; margin-right: 20%;
+  }
+  .pastevents {
+    margin-left: 20%; margin-right: 20%;
+    filter: drop-shadow(0px 0px 20px #efb82122);
+  }
+  .moreevents {
+    margin-left: 20%; margin-right: 20%;
+    filter: drop-shadow(0px 0px 20px #efb82122);
+  }
+  .list-group-item {
+    background-color: #0f0f0f;
+    color: #fff;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .date {
+    color: #efb821;
+  }
+  .eventlist-b {
+  }
