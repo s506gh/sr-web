@@ -1,6 +1,11 @@
+:root {
+  --c7252: #ad3224;
+  --c7253: #fbf4a2;
+  --c7254: #6f7aba;
+}
+
 body {
-    background-color: #0f0f0f;
-  
+    background-color: #161616;  
     overflow-x: hidden !important;
     /* ^ Used to hide the scrollbar*/
   
@@ -40,7 +45,7 @@ body {
     margin-left: 36px;
   }
   .textcolor {
-    color: white;
+    color: #fff;
   }
   .textitalic {
     font-style: italic;
@@ -52,7 +57,7 @@ body {
   
   .navbar-nav li:hover {
     color: #000 !important;
-    background-color: #efb821 !important; /*#C28510 and 2B2D42 */
+    background-color: #98a6ff !important; /*#C28510 and 2B2D42 */
   }
   nav {
     background-color: #1F1F1F;
@@ -61,7 +66,7 @@ body {
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 700;
-    border-bottom: 5px solid #efb821;
+    border-bottom: 5px solid #98a6ff;
   }
   #navspan {
     padding: 0px 0px 0px 0px;
@@ -109,7 +114,7 @@ body {
     --bs-accordion-btn-color: #dadada;
     --bs-accordion-border-color:#dadada ;
     --bs-accordion-active-color: #1f1f1f ;
-    --bs-accordion-active-bg: #efb821 ;
+    --bs-accordion-active-bg: #98a6ff ;
   }
   .accordion-collapse{
     text-align: left;
@@ -135,7 +140,7 @@ body {
     
     
     --fc-today-bg-color: rgba(255, 213, 0, 0.15);
-    --fc-event-bg-color: #efb821;
+    --fc-event-bg-color: #98a6ff;
     margin: 0 auto !important; 
   }
   .fc-view-container {
@@ -162,7 +167,7 @@ body {
     
   }
   .mailform button:hover{
-    background-color: #efb821 !important;
+    background-color: #98a6ff !important;
   }
   .mailform button{
     background-color: #222227;
@@ -224,13 +229,13 @@ body {
     color: #fff;
   }
   .t {
-    background-color: #efb821;
+    background-color: #98a6ff;
     color: #000;
   }
   .card-group {
     margin-left: 10%;
     margin-right: 10%;
-    filter: drop-shadow(0px 0px 20px #efb82133);
+    filter: drop-shadow(0px 0px 20px #98a6ff33);
   }
   .rebrand {
     background-color: #090909;
@@ -244,7 +249,7 @@ body {
   .crevomark {
     width: 35%;
     margin-left: 50%; margin-right: 50%;
-    filter: drop-shadow(0px 0px 10px #000000);
+    filter: drop-shadow(0px 0px 5px #fff);
   }
   .pnbtn {
     filter: drop-shadow(0px 0px 10px #000000);
@@ -254,7 +259,7 @@ body {
     color:#7dbbe7
   }
   .list-group {
-    filter: drop-shadow(0px 0px 20px #efb82133);
+    filter: drop-shadow(0px 0px 20px #98a6ff33);
   }
   
   .eventlist {
@@ -262,11 +267,11 @@ body {
   }
   .pastevents {
     margin-left: 20%; margin-right: 20%;
-    filter: drop-shadow(0px 0px 20px #efb82122);
+    filter: drop-shadow(0px 0px 20px #98a6ff22);
   }
   .moreevents {
     margin-left: 20%; margin-right: 20%;
-    filter: drop-shadow(0px 0px 20px #efb82122);
+    filter: drop-shadow(0px 0px 20px #98a6ff22);
   }
   .list-group-item {
     background-color: #0f0f0f;
@@ -276,7 +281,24 @@ body {
     font-weight: 700;
   }
   .date {
-    color: #efb821;
+    color: #98a6ff;
   }
-  .eventlist-b {
+  .card-title {
+    font-weight: 800;
+    font-size: 36pt;
   }
+footer {
+  border-top: 5px solid #98a6ff;
+}
+.teamlogo {
+  width: 70%;
+}
+.t52 {
+  color: var(--c7252);
+}
+.t53 {
+  color: var(--c7253);
+}
+.t54 {
+  color: var(--c7254);
+}
