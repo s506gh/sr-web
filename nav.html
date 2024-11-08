@@ -1,0 +1,42 @@
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+<nav id="navspan" class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a href="index.html#home" class="navbar-brand lg-0"><img
+      class="d-inline-block align-top"
+      src="assets/img/logomain-d.svg"
+      width="65"
+      height="auto"
+      style="padding-left: 15px" />
+</a>
+    <button
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      class="navbar-toggler"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav text-center w-100">
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link active"> HOME </a>
+        </li>
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link active"> WIP </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+  const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarNav')
+const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+navLinks.forEach((l) => { l.addEventListener('click', function execute(){
+ if(window.innerWidth <= 992) {
+  bsCollapse.toggle()
+   }
+
+})
+})
+</script>

@@ -54,37 +54,7 @@ body {
     padding-bottom: 3px;
     padding-top: 3px;
   }
-  
-  .navbar-nav li:hover {
-    color: #000 !important;
-    background-color: #98a6ff !important; /*#C28510 and 2B2D42 */
-  }
-  nav {
-    background-color: #1F1F1F;
-    opacity: 1;
-    font-family: Montserrat;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    border-bottom: 5px solid #98a6ff;
-  }
-  #navspan {
-    padding: 0px 0px 0px 0px;
-  }
-  .nav-link {
-    padding: 22px 0 22px 0;
-    
-  }
-  
-  .navbar-toggler {
-    margin-top: 11px;
-    margin-bottom: 11px;
-    margin-right: 11px;
-  }
-  
-  .bottomnav {
-    background-color: #1f1f1f;
-  }
+
   .bottomLogo {
     width: 167px;
     margin: 0px 0px 0px 30%;
@@ -322,4 +292,8 @@ a {
   color: #ffffff;
   background-color: transparent;
   text-decoration: none;
+}
+.banner2 {
+  border-top: solid #ffffff 10px;
+  border-bottom: solid #ffffff 10px;
 }
