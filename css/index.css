@@ -101,6 +101,20 @@ body {
     font-weight: 800;
     font-style: normal;
   }
+  h1 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  h6 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
   li {
     color: white;
   }
@@ -296,4 +310,11 @@ a {
 .banner2 {
   border-top: solid #ffffff 10px;
   border-bottom: solid #ffffff 10px;
+}
+a {
+  color: #7dbbe7;
+}
+.banner-au {
+  background-image: url("/assets/img/banner.svg");
+  background-size: cover;
 }
